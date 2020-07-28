@@ -33,6 +33,7 @@
         methods: {
             isActive(path) {
                 return path === this.$route.fullPath;
+                console.log(path,'path')
             },
             // 关闭单个标签
             closeTags(index) {
@@ -55,6 +56,7 @@
                     return item.path === this.$route.fullPath;
                 })
                 this.tagsList = curItem;
+                console.log('curItme====>',curItem)
                 console.log('关闭其他标签this.tagsList==>',this.tagsList)
             },
             // 设置标签
